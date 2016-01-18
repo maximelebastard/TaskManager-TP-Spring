@@ -12,11 +12,17 @@ import java.util.List;
  */
 @Entity
 @DiscriminatorValue("Story")
-@Builder
-@AllArgsConstructor
 @NoArgsConstructor
 @ToString
 public class Story extends UserFeatureRequest implements Serializable {
+
+    @Builder
+    public Story(Long id, String summary, String description, User asker, List<Task> tasks, Epic epic, Sprint sprint) {
+        super(id, summary, description, asker);
+        this.setTasks(tasks);
+        this.setEpic(epic);
+        this.setSprint(sprint);
+    }
 
     @Getter
     @Setter

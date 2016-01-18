@@ -61,6 +61,12 @@ public class Task extends BaseEntity implements Serializable {
 
     @Getter
     @Setter
+    @ManyToOne
+    @FormParam("sprint")
+    private Sprint sprint;
+
+    @Getter
+    @Setter
     @ManyToOne(
             fetch = FetchType.LAZY
     )

@@ -24,8 +24,9 @@ public abstract class BaseService<Entity, Repository extends CrudRepository> {
         return (Entity) repository.findOne(id);
     }
 
-    public void create(Entity entity) {
+    public Entity create(Entity entity) {
         repository.save(entity);
+        return entity;
     }
 
     public void update(Long id, Entity entity) {

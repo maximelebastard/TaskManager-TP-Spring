@@ -1,5 +1,9 @@
 package fr.istic.taa.taskmanager.rest;
 
+import com.wordnik.swagger.annotations.ApiOperation;
+import com.wordnik.swagger.annotations.ApiParam;
+import com.wordnik.swagger.annotations.ApiResponse;
+import com.wordnik.swagger.annotations.ApiResponses;
 import fr.istic.taa.taskmanager.service.BaseService;
 import jersey.repackaged.com.google.common.collect.Lists;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -37,7 +41,13 @@ public abstract class RestResource<Entity, Service extends BaseService> {
      * Gets all the entities
      * @return The entities
      */
-    @RequestMapping
+    @RequestMapping(
+            method= RequestMethod.GET,
+            consumes={MediaType.APPLICATION_JSON},
+            produces = {MediaType.APPLICATION_JSON}
+    )
+    @ApiOperation(value = "Gets all the objects", responseContainer = "List")
+    @ApiResponse(code = 200, message = "All the objects")
     public @ResponseBody List<Entity> getAll(){
         Iterable<Entity> all = this.service.findAll();
         return Lists.newArrayList(all);
@@ -54,7 +64,16 @@ public abstract class RestResource<Entity, Service extends BaseService> {
             consumes={MediaType.APPLICATION_JSON},
             produces = {MediaType.APPLICATION_JSON}
     )
-    public @ResponseBody Entity getOne(@PathParam("id") Long id, HttpServletResponse response){
+    @ApiOperation(value = "Gets one object from its id")
+    @ApiResponses({
+            @ApiResponse(code = 200, message = "One object if found"),
+            @ApiResponse(code = 404, message = "Object with this id not found")
+    })
+    public @ResponseBody Entity getOne(
+            @ApiParam(value = "Id of the object", required = true)
+            @PathParam("id")
+            Long id,
+            HttpServletResponse response){
         try{
             Entity entity = (Entity) service.findOneById(id);
             return entity;
@@ -74,7 +93,15 @@ public abstract class RestResource<Entity, Service extends BaseService> {
             consumes={MediaType.APPLICATION_JSON},
             produces = {MediaType.APPLICATION_JSON}
     )
-    public @ResponseBody Entity post(Entity entity, HttpServletResponse response){
+    @ApiOperation(value = "Creates an object")
+    @ApiResponses({
+            @ApiResponse(code = 201, message = "Object created"),
+            @ApiResponse(code = 400, message = "Provided fields are incorrects")
+    })
+    public @ResponseBody Entity post(
+            @ApiParam(value = "New values of the object", required = true)
+            Entity entity,
+            HttpServletResponse response){
         service.create(entity);
         response.setStatus(201);
         return entity;
@@ -91,7 +118,19 @@ public abstract class RestResource<Entity, Service extends BaseService> {
             consumes={MediaType.APPLICATION_JSON},
             produces = {MediaType.APPLICATION_JSON}
     )
-    public @ResponseBody Entity postOne(@PathParam("id") Long id, Entity entity, HttpServletResponse response){
+    @ApiOperation(value = "Updates an object")
+    @ApiResponses({
+            @ApiResponse(code = 200, message = "Object updated"),
+            @ApiResponse(code = 400, message = "Provided fields are incorrects"),
+            @ApiResponse(code = 404, message = "Cannot find an object with this id")
+    })
+    public @ResponseBody Entity postOne(
+            @PathParam("id")
+            @ApiParam(value = "Id of the object", required = true)
+            Long id,
+            @ApiParam(value = "New values of the object", required = true)
+            Entity entity,
+            HttpServletResponse response){
         try {
             service.update(id, entity);
             return entity;
@@ -107,7 +146,15 @@ public abstract class RestResource<Entity, Service extends BaseService> {
             consumes={MediaType.APPLICATION_JSON},
             produces = {MediaType.APPLICATION_JSON}
     )
-    public @ResponseBody Entity remove(@PathParam("id") Long id, HttpServletResponse response){
+    @ApiOperation(value = "Deletes an object")
+    @ApiResponses({
+            @ApiResponse(code = 204, message = "Object deleted"),
+            @ApiResponse(code = 404, message = "Cannot find an object with this id")
+    })
+    public @ResponseBody Entity remove(
+            @ApiParam(value = "Id of the object", required = true)
+            @PathParam("id") Long id,
+            HttpServletResponse response){
         try {
             service.removeOneById(id);
             response.setStatus(204);

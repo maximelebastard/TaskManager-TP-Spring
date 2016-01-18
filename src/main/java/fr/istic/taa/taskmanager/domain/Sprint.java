@@ -52,4 +52,15 @@ public class Sprint extends BaseEntity implements Serializable {
     )
     @FormParam("stories")
     private List<Story> stories;
+
+    @Getter
+    @Setter
+    @OneToMany(
+            fetch = FetchType.EAGER,
+            orphanRemoval = true,
+            mappedBy = "sprint",
+            cascade = {CascadeType.REMOVE, CascadeType.PERSIST}
+    )
+    @FormParam("tasks")
+    private List<Task> tasks;
 }
