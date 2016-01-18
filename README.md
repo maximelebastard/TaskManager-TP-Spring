@@ -22,3 +22,7 @@ All this app will be runnable from a Docker soon.
 ### Docker style
 
 ...soon
+
+## Documentation
+
+When the server runs, the swagger documentation is available at http://localhost:8080/swagger/index.html
