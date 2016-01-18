@@ -9,4 +9,9 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class StoryService extends BaseService<Story, StoryRepository> {
+
+    @Autowired
+    public StoryService(StoryRepository repository) {
+        super(repository);
+    }
 }

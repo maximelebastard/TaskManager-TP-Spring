@@ -3,12 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="34bdf6a2-998a-4824-aacd-57e692a8f64d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/service/BaseService.java" afterPath="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/service/BaseService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/controller/RestController.java" afterPath="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/controller/RestController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/repository/EpicRepository.java" afterPath="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/repository/EpicRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/service/EpicService.java" afterPath="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/service/EpicService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/repository/SprintRepository.java" afterPath="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/repository/SprintRepository.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/service/SprintService.java" afterPath="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/service/SprintService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TaaTaskManager.iml" afterPath="$PROJECT_DIR$/TaaTaskManager.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/controller/TaskController.java" afterPath="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/controller/TaskController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/repository/StoryRepository.java" afterPath="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/repository/StoryRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/service/StoryService.java" afterPath="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/service/StoryService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/repository/TaskRepository.java" afterPath="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/repository/TaskRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/service/TaskService.java" afterPath="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/service/TaskService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/repository/UserRepository.java" afterPath="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/repository/UserRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/service/UserService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
     </list>
     <ignored path="TaaTaskManager.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,20 +54,12 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/service/TaskService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#402#403#0" expanded="true" />
+                <element signature="e#435#436#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.185185">
-              <caret line="61" column="21" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -71,7 +68,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/controller/RestController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="113" column="27" selection-start-line="113" selection-start-column="27" selection-end-line="113" selection-end-column="27" />
+              <caret line="52" column="20" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -79,14 +76,70 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseService.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BaseService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/service/BaseService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.28355387">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding>
-                <element signature="e#442#443#0" expanded="true" />
-                <element signature="e#485#486#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#451#452#0" expanded="true" />
+                <element signature="e#495#496#0" expanded="true" />
+                <element signature="e#535#536#0" expanded="true" />
+                <element signature="e#578#579#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EpicService.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/service/EpicService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.25384617">
+              <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+              <folding>
+                <element signature="e#508#509#0" expanded="true" />
+                <element signature="e#541#542#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SprintService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/service/SprintService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#416#417#0" expanded="true" />
+                <element signature="e#449#450#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StoryService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/service/StoryService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+              <folding>
+                <element signature="e#517#518#0" expanded="true" />
+                <element signature="e#550#551#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/service/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+              <folding>
+                <element signature="e#506#507#0" expanded="true" />
+                <element signature="e#539#540#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -113,18 +166,12 @@
         <option value="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/StatusEndpoint.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/repository/BaseRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/TestApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/domain/Epic.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/domain/Story.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/domain/Sprint.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/domain/Task.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/domain/UserFeatureRequest.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/domain/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/repository/EpicRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/repository/SprintRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/repository/StoryRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/repository/TaskRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/repository/UserRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/web/rest/EpicResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/web/rest/SprintResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/web/rest/StoryResource.java" />
@@ -136,15 +183,21 @@
         <option value="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/controller/SprintController.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/controller/EpicController.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/TaaTaskManagerApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/service/StoryService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/service/TaskService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/service/EpicService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/service/SprintService.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/controller/TaskController.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/controller/RestController.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/service/BaseService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/service/EpicService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/repository/EpicRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/repository/SprintRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/repository/StoryRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/repository/TaskRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/repository/UserRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/service/SprintService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/service/StoryService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/service/TaskService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
       </list>
     </option>
   </component>
@@ -172,8 +225,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="x" value="-1920" />
+    <option name="y" value="-180" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -771,15 +826,15 @@
       <created>1453130250312</created>
       <option name="number" value="Default" />
       <updated>1453130250312</updated>
-      <workItem from="1453130254358" duration="6006000" />
+      <workItem from="1453130254358" duration="6994000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6006000" />
+    <option name="totallyTimeSpent" value="6994000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="-1920" y="-180" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -791,11 +846,11 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32822478" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" x="1440" y="284" width="1440" height="614" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32891566" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33690986" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25079873" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3253012" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -803,7 +858,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32871288" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -820,14 +875,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/controller/RestController.java</url>
-          <line>43</line>
-          <properties />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
@@ -899,46 +946,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/repository/EpicRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/repository/SprintRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19848771">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/repository/StoryRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19848771">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/repository/UserRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14177693">
-          <caret line="5" column="65" selection-start-line="5" selection-start-column="65" selection-end-line="5" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.2.4.RELEASE/spring-web-4.2.4.RELEASE.jar!/org/springframework/web/bind/annotation/ResponseBody.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2689243">
@@ -959,14 +966,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.25531915">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
           <folding />
         </state>
       </provider>
@@ -998,65 +997,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/service/EpicService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11342155">
-          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/service/StoryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/service/SprintService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/repository/TaskRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17013232">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-14.185185">
           <caret line="61" column="21" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/service/TaskService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1071,10 +1016,113 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/repository/EpicRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/repository/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17013232">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/repository/TaskRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17013232">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/repository/StoryRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17013232">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/repository/SprintRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17013232">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/service/StoryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+          <folding>
+            <element signature="e#517#518#0" expanded="true" />
+            <element signature="e#550#551#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+          <folding>
+            <element signature="e#506#507#0" expanded="true" />
+            <element signature="e#539#540#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/service/TaskService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#402#403#0" expanded="true" />
+            <element signature="e#435#436#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/1.3.1.RELEASE/spring-boot-autoconfigure-1.3.1.RELEASE.jar!/org/springframework/boot/autoconfigure/orm/jpa/JpaProperties.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35214448">
+          <caret line="105" column="20" selection-start-line="105" selection-start-column="20" selection-end-line="105" selection-end-column="20" />
+          <folding>
+            <element signature="e#2910#2911#0" expanded="true" />
+            <element signature="e#2956#2957#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2769231">
+          <caret line="12" column="66" selection-start-line="12" selection-start-column="66" selection-end-line="12" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/controller/RestController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="113" column="27" selection-start-line="113" selection-start-column="27" selection-end-line="113" selection-end-column="27" />
+          <caret line="52" column="20" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1083,11 +1131,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/service/BaseService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28355387">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
-            <element signature="e#442#443#0" expanded="true" />
-            <element signature="e#485#486#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#451#452#0" expanded="true" />
+            <element signature="e#495#496#0" expanded="true" />
+            <element signature="e#535#536#0" expanded="true" />
+            <element signature="e#578#579#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/service/SprintService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#416#417#0" expanded="true" />
+            <element signature="e#449#450#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/istic/taa/taskmanager/service/EpicService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25384617">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <folding>
+            <element signature="e#508#509#0" expanded="true" />
+            <element signature="e#541#542#0" expanded="true" />
           </folding>
         </state>
       </provider>

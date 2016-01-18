@@ -12,6 +12,10 @@ public abstract class BaseService<Entity, Repository extends CrudRepository> {
 
     Repository repository;
 
+    public BaseService(Repository repository) {
+        this.repository = repository;
+    }
+
     public Iterable<Entity> findAll(){
         return repository.findAll();
     }
