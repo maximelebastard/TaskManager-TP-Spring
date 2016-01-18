@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name taaTaskManagerApp.controller:MainCtrl
+ * @name taaTaskManagerApp.controller:StoryCtrl
  * @description
- * # MainCtrl
+ * # StoryCtrl
  * Controller of the taaTaskManagerApp
  */
 angular.module('taaTaskManagerApp')
-  .controller('MainCtrl', function () {
+  .controller('StoryCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',

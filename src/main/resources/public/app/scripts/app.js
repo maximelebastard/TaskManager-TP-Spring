@@ -18,17 +18,14 @@ angular
     'ngSanitize',
     'ngTouch'
   ])
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider, $httpProvider) {
+    $httpProvider.defaults.headers.common['Content-Type'] = 'application/json; charset=utf-8';
+
     $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl',
-        controllerAs: 'main'
-      })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl',
-        controllerAs: 'about'
+        templateUrl: 'views/summary.html',
+        controller: 'SummaryCtrl',
+        controllerAs: 'summary'
       })
       .otherwise({
         redirectTo: '/'

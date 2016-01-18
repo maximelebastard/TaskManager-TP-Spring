@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name taaTaskManagerApp.controller:AboutCtrl
+ * @name taaTaskManagerApp.controller:SummaryCtrl
  * @description
- * # AboutCtrl
+ * # SummaryCtrl
  * Controller of the taaTaskManagerApp
  */
 angular.module('taaTaskManagerApp')
-  .controller('AboutCtrl', function () {
+  .controller('SummaryCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
