@@ -14,7 +14,10 @@ All this app will be runnable from a Docker soon.
 
 * Clone this repository and cd to its root
 * Run mvn spring-boot:run
-* The app will be available on http://localhost:8080
+* The webservices will be available on http://localhost:8080
+* Then, go to src/main/resources/public
+* Run grunt serve
+* The Angular App will open on port 9000
 
 ### Docker style
 
