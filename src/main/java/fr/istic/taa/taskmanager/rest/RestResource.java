@@ -1,9 +1,7 @@
-package fr.istic.taa.taskmanager.controller;
+package fr.istic.taa.taskmanager.rest;
 
 import fr.istic.taa.taskmanager.service.BaseService;
 import jersey.repackaged.com.google.common.collect.Lists;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -20,18 +18,18 @@ import java.util.logging.Logger;
  * @param <Entity>  The entity concerned by the rest resource
  * @param <Service> The service used by the resource
  */
-public abstract class RestController<Entity, Service extends BaseService> {
+public abstract class RestResource<Entity, Service extends BaseService> {
     /**
      * Logger
      */
-    protected static final Logger logger = Logger.getLogger(RestController.class.getName());
+    protected static final Logger logger = Logger.getLogger(RestResource.class.getName());
 
     /**
      * Service to use
      */
     protected Service service;
 
-    public RestController(Service service) {
+    public RestResource(Service service) {
         this.service = service;
     }
 

@@ -1,4 +1,4 @@
-package fr.istic.taa.taskmanager.controller;
+package fr.istic.taa.taskmanager.rest;
 
 import fr.istic.taa.taskmanager.domain.Story;
 import fr.istic.taa.taskmanager.service.StoryService;
@@ -11,10 +11,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
  */
 @Controller
 @RequestMapping("/api/epic")
-public class EpicController extends RestController<Story, StoryService> {
+public class EpicResource extends RestResource<Story, StoryService> {
 
     @Autowired
-    public EpicController(StoryService service) {
+    public EpicResource(StoryService service) {
         super(service);
     }
 }

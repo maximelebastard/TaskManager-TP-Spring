@@ -1,4 +1,4 @@
-package fr.istic.taa.taskmanager.controller;
+package fr.istic.taa.taskmanager.rest;
 
 import fr.istic.taa.taskmanager.domain.Sprint;
 import fr.istic.taa.taskmanager.service.SprintService;
@@ -11,10 +11,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
  */
 @Controller
 @RequestMapping("/api/sprint")
-public class SprintController extends RestController<Sprint, SprintService> {
+public class SprintResource extends RestResource<Sprint, SprintService> {
 
     @Autowired
-    public SprintController(SprintService service) {
+    public SprintResource(SprintService service) {
         super(service);
     }
 }

@@ -1,4 +1,4 @@
-package fr.istic.taa.taskmanager.controller;
+package fr.istic.taa.taskmanager.rest;
 
 import fr.istic.taa.taskmanager.domain.User;
 import fr.istic.taa.taskmanager.service.UserService;
@@ -11,10 +11,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
  */
 @Controller
 @RequestMapping("/api/user")
-public class UserController extends RestController<User, UserService> {
+public class UserResource extends RestResource<User, UserService> {
 
     @Autowired
-    public UserController(UserService service) {
+    public UserResource(UserService service) {
         super(service);
     }
 }
