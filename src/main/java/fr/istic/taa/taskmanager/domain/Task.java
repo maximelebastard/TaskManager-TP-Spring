@@ -6,6 +6,7 @@ import javax.persistence.*;
 import javax.ws.rs.FormParam;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.QueryParam;
+import java.io.Serializable;
 
 /**
  * Represents a task
@@ -19,13 +20,13 @@ import javax.ws.rs.QueryParam;
     @NamedQuery(name="Task.unachievedTasks", query = "SELECT t FROM Task t WHERE t.done=false"),
     @NamedQuery(name="Task.achievedTasks", query = "SELECT t FROM Task t WHERE t.done=true")
 })
-public class Task extends BaseEntity {
+public class Task extends BaseEntity implements Serializable {
 
     @Id
     @GeneratedValue
     @Getter
     @Setter
-    private long id;
+    private Long id;
 
     @Getter
     @Setter

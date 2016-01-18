@@ -4,6 +4,7 @@ import lombok.*;
 
 import javax.persistence.*;
 import javax.ws.rs.FormParam;
+import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -13,9 +14,9 @@ import java.util.List;
 @DiscriminatorValue("Epic")
 @Builder
 @AllArgsConstructor
-//@NoArgsConstructor
+@NoArgsConstructor
 @ToString
-public class Epic extends UserFeatureRequest {
+public class Epic extends UserFeatureRequest implements Serializable {
 
     @Getter
     @Setter

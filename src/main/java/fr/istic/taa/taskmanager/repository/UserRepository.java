@@ -1,6 +1,7 @@
 package fr.istic.taa.taskmanager.repository;
 
 import fr.istic.taa.taskmanager.domain.User;
+import org.springframework.data.repository.CrudRepository;
 
-public class UserRepository extends BaseRepository<User> {
+public interface UserRepository extends CrudRepository<User, Long> {
 }

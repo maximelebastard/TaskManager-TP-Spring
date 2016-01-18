@@ -6,6 +6,7 @@ import org.joda.time.DateTime;
 
 import javax.persistence.*;
 import javax.ws.rs.FormParam;
+import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -16,13 +17,13 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-public class Sprint extends BaseEntity {
+public class Sprint extends BaseEntity implements Serializable {
 
     @Id
     @GeneratedValue
     @Getter
     @Setter
-    private long id;
+    private Long id;
 
     @Getter
     @Setter

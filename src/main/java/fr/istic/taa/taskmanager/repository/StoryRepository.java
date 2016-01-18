@@ -1,6 +1,7 @@
 package fr.istic.taa.taskmanager.repository;
 
 import fr.istic.taa.taskmanager.domain.Story;
+import org.springframework.data.repository.CrudRepository;
 
-public class StoryRepository extends BaseRepository<Story> {
+public interface StoryRepository extends CrudRepository<Story, Long> {
 }

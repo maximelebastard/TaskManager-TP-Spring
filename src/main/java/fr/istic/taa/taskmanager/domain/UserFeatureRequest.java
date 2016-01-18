@@ -4,6 +4,7 @@ import lombok.*;
 
 import javax.persistence.*;
 import javax.ws.rs.FormParam;
+import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -15,13 +16,13 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public abstract class UserFeatureRequest extends BaseEntity {
+public abstract class UserFeatureRequest extends BaseEntity implements Serializable {
 
     @Id
     @GeneratedValue
     @Getter
     @Setter
-    private long id;
+    private Long id;
 
     @Getter
     @Setter

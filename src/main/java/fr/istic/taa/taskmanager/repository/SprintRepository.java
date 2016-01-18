@@ -1,6 +1,7 @@
 package fr.istic.taa.taskmanager.repository;
 
 import fr.istic.taa.taskmanager.domain.Sprint;
+import org.springframework.data.repository.CrudRepository;
 
-public class SprintRepository extends BaseRepository<Sprint> {
+public interface SprintRepository extends CrudRepository<Sprint, Long> {
 }

@@ -7,6 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.ws.rs.FormParam;
+import java.io.Serializable;
 
 /**
  * Represents a software user
@@ -16,13 +17,13 @@ import javax.ws.rs.FormParam;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-public class User extends BaseEntity {
+public class User extends BaseEntity implements Serializable {
 
     @Id
     @GeneratedValue
     @Getter
     @Setter
-    private long id;
+    private Long id;
 
     @Getter
     @Setter
