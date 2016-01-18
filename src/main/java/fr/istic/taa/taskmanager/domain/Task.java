@@ -1,5 +1,7 @@
 package fr.istic.taa.taskmanager.domain;
 
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 
 import javax.persistence.*;
@@ -57,12 +59,14 @@ public class Task extends BaseEntity implements Serializable {
     @Setter
     @ManyToOne
     @FormParam("story")
+    @JsonIgnore
     private Story story;
 
     @Getter
     @Setter
     @ManyToOne
     @FormParam("sprint")
+    @JsonIgnore
     private Sprint sprint;
 
     @Getter

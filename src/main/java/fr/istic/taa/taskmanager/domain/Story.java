@@ -1,5 +1,6 @@
 package fr.istic.taa.taskmanager.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 
 import javax.persistence.*;
@@ -39,11 +40,13 @@ public class Story extends UserFeatureRequest implements Serializable {
     @Setter
     @ManyToOne
     @FormParam("epic")
+    @JsonIgnore
     private Epic epic;
 
     @Getter
     @Setter
     @ManyToOne
     @FormParam("sprint")
+    @JsonIgnore
     private Sprint sprint;
 }
