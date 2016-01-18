@@ -2,9 +2,16 @@ package fr.istic.taa.taskmanager.controller;
 
 import fr.istic.taa.taskmanager.service.BaseService;
 import jersey.repackaged.com.google.common.collect.Lists;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.persistence.EntityNotFoundException;
+import javax.servlet.http.HttpServletResponse;
+import javax.ws.rs.PathParam;
+import javax.ws.rs.core.MediaType;
 import java.util.List;
 import java.util.logging.Logger;
 
@@ -43,19 +50,19 @@ public abstract class RestController<Entity, Service extends BaseService> {
      * @param id The id to fetch
      * @return The entity if found
      */
-    /*@RequestMapping(
+    @RequestMapping(
             value = "/{id}",
             method= RequestMethod.GET,
             consumes={MediaType.APPLICATION_JSON},
             produces = {MediaType.APPLICATION_JSON}
     )
-    public @ResponseBody Response getOne(@PathParam("id") Long id){
+    public @ResponseBody Entity getOne(@PathParam("id") Long id, HttpServletResponse response){
         try{
             Entity entity = (Entity) service.findOneById(id);
-
-            return Response.ok(entity, MediaType.APPLICATION_JSON).build();
+            return entity;
         } catch(EntityNotFoundException e){
-            return Response.status(Response.Status.NOT_FOUND).build();
+            response.setStatus(404);
+            return null;
         }
     }
 
@@ -63,15 +70,16 @@ public abstract class RestController<Entity, Service extends BaseService> {
      * Creates an entity
      * @return Entity created
      */
-    /*@RequestMapping(
+    @RequestMapping(
             value = "/",
             method= RequestMethod.POST,
             consumes={MediaType.APPLICATION_JSON},
             produces = {MediaType.APPLICATION_JSON}
     )
-    public @ResponseBody Response post(Entity entity){
+    public @ResponseBody Entity post(Entity entity, HttpServletResponse response){
         service.create(entity);
-        return Response.status(Response.Status.CREATED).entity(entity).build();
+        response.setStatus(201);
+        return entity;
     }
 
     /**
@@ -79,18 +87,19 @@ public abstract class RestController<Entity, Service extends BaseService> {
      * @param id The id of the entity to update
      * @return The updated entity
      */
-    /*@RequestMapping(
+    @RequestMapping(
             value = "/{id}",
             method= RequestMethod.POST,
             consumes={MediaType.APPLICATION_JSON},
             produces = {MediaType.APPLICATION_JSON}
     )
-    public @ResponseBody Response postOne(@PathParam("id") Long id, Entity entity){
+    public @ResponseBody Entity postOne(@PathParam("id") Long id, Entity entity, HttpServletResponse response){
         try {
             service.update(id, entity);
-            return Response.status(Response.Status.OK).entity(entity).build();
+            return entity;
         } catch(EntityNotFoundException e){
-            return Response.status(Response.Status.NOT_FOUND).build();
+            response.setStatus(404);
+            return null;
         }
     }
 
@@ -100,13 +109,14 @@ public abstract class RestController<Entity, Service extends BaseService> {
             consumes={MediaType.APPLICATION_JSON},
             produces = {MediaType.APPLICATION_JSON}
     )
-    public @ResponseBody Response remove(@PathParam("id") Long id){
+    public @ResponseBody Entity remove(@PathParam("id") Long id, HttpServletResponse response){
         try {
             service.removeOneById(id);
-            return Response.status(Response.Status.NO_CONTENT).build();
+            response.setStatus(204);
         } catch(EntityNotFoundException e){
-            return Response.status(Response.Status.NOT_FOUND).build();
+            response.setStatus(404);
         }
-    }*/
+        return null;
+    }
 
 }
