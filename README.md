@@ -18,6 +18,8 @@ _Previous TP (with REST Easy) available here https://github.com/maximelebastard/
 * Run mvn spring-boot:run
 * The webservices will be available on http://localhost:8080
 
+* You can insert testing data by calling this url http://localhost:8080/runDataFixtures . It will insert some data fixtures in your Database
+
 * You can then get the GUI here: https://github.com/maximelebastard/TaskManager-TP-GUI
 
 ### Docker style
