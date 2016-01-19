@@ -8,6 +8,8 @@ This practicing is designed to get further onto some Java productive techniques 
 
 All this app will be runnable from a Docker soon.
 
+_Previous TP (with REST Easy) available here https://github.com/maximelebastard/TaskManager-TP_
+
 ## How to use ?
 
 ### Manual style
