@@ -43,7 +43,6 @@ public abstract class RestResource<Entity, Service extends BaseService> {
      */
     @RequestMapping(
             method= RequestMethod.GET,
-            consumes={MediaType.APPLICATION_JSON},
             produces = {MediaType.APPLICATION_JSON}
     )
     @ApiOperation(value = "Gets all the objects", responseContainer = "List")
@@ -61,7 +60,6 @@ public abstract class RestResource<Entity, Service extends BaseService> {
     @RequestMapping(
             value = "/{id}",
             method= RequestMethod.GET,
-            consumes={MediaType.APPLICATION_JSON},
             produces = {MediaType.APPLICATION_JSON}
     )
     @ApiOperation(value = "Gets one object from its id")
