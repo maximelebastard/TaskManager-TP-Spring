@@ -6,13 +6,12 @@ import com.wordnik.swagger.annotations.ApiResponse;
 import com.wordnik.swagger.annotations.ApiResponses;
 import fr.istic.taa.taskmanager.service.BaseService;
 import jersey.repackaged.com.google.common.collect.Lists;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import javax.persistence.EntityNotFoundException;
 import javax.servlet.http.HttpServletResponse;
 import javax.ws.rs.PathParam;
+import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 import java.util.List;
 import java.util.logging.Logger;
@@ -86,7 +85,6 @@ public abstract class RestResource<Entity, Service extends BaseService> {
      * @return Entity created
      */
     @RequestMapping(
-            value = "/",
             method= RequestMethod.POST,
             consumes={MediaType.APPLICATION_JSON},
             produces = {MediaType.APPLICATION_JSON}
@@ -98,6 +96,7 @@ public abstract class RestResource<Entity, Service extends BaseService> {
     })
     public @ResponseBody Entity post(
             @ApiParam(value = "New values of the object", required = true)
+            @RequestBody
             Entity entity,
             HttpServletResponse response){
         service.create(entity);
@@ -123,7 +122,7 @@ public abstract class RestResource<Entity, Service extends BaseService> {
             @ApiResponse(code = 404, message = "Cannot find an object with this id")
     })
     public @ResponseBody Entity postOne(
-            @PathParam("id")
+            @PathVariable("id")
             @ApiParam(value = "Id of the object", required = true)
             Long id,
             @ApiParam(value = "New values of the object", required = true)
@@ -141,7 +140,6 @@ public abstract class RestResource<Entity, Service extends BaseService> {
     @RequestMapping(
             value = "/{id}",
             method= RequestMethod.DELETE,
-            consumes={MediaType.APPLICATION_JSON},
             produces = {MediaType.APPLICATION_JSON}
     )
     @ApiOperation(value = "Deletes an object")
@@ -151,7 +149,7 @@ public abstract class RestResource<Entity, Service extends BaseService> {
     })
     public @ResponseBody Entity remove(
             @ApiParam(value = "Id of the object", required = true)
-            @PathParam("id") Long id,
+            @PathVariable("id") Long id,
             HttpServletResponse response){
         try {
             service.removeOneById(id);
